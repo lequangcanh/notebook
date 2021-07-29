@@ -15,3 +15,7 @@
   **[ĐANG BỎ NGỎ]**
 * self nó hoạt động ntn? Thay đổi liên tục?
 * Trong ubuntu thì mọi thứ work bình thường, nhưng trong các docker image bản alpine push log vào `/dev/stdout` hoặc `/proc/self/fd/1` thì nó lại không work? Nhưng push vào `/proc/1/fd/1` thì nó lại work? Process 1 này là gì?
+
+### File /etc/resolv.conf
+* symlink tới `../run/resolvconf/resolv.conf`?
+* Trong `../run/resolvconf/resolv.conf` thì giá trị lại thay đổi mỗi khi đổi mạng?
