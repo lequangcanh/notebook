@@ -18,3 +18,16 @@
 ### Config sidekiq 6 khi deploy bằng Capistrano
 
 * https://github.com/lequangcanh/cap_learning#v%E1%BB%81-sidekiq
+
+### Nhiều project sử dụng sidekiq dùng chung 1 Redis server
+* Thêm option namespace trong sidekiq config
+  ```ruby
+  # config/initializers/sidekiq.rb
+  Sidekiq.configure_server do |config|
+    config.redis = {url: ENV["REDIS_SERVER_URL"], namespace: "Project1"}
+  end
+  
+  Sidekiq.configure_client do |config|
+    config.redis = {url: ENV["REDIS_SERVER_URL"], namespace: "Project1"}
+  end
+  ```
