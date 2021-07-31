@@ -1,0 +1,13 @@
+### Một số packages nên cài
+* [file-icons](https://atom.io/packages/file-icons)
+* [git-blame](https://atom.io/packages/git-blame)
+* [goto-definition](https://atom.io/packages/goto-definition)
+* [highlight-selected](https://atom.io/packages/highlight-selected)
+* [intentions](https://atom.io/packages/intentions)
+* [language-docker](https://atom.io/packages/language-docker)
+* [language-slim](https://atom.io/packages/language-slim)
+* [language-terraform](https://atom.io/packages/language-terraform)
+* [linter](https://atom.io/packages/linter)
+* [linter-ruby](https://atom.io/packages/linter-ruby)
+* [linter-ui-default](https://atom.io/packages/linter-ui-default)
+* [open-in-browsers](https://atom.io/packages/open-in-browsers)
