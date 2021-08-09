@@ -12,6 +12,7 @@
   * Có thể chia 1 application thành nhiều service hoặc component
   * Có thể run application với các version khác nhau. Mỗi version có thể run trên nhiều instance. Nhiều version có thể run cùng lúc
 * So sánh tính năng của Standard và Flexible
+
 |Feature|Standard|Flexible|
 |-------|--------|--------|
 |Pricing|Instance hourse|vCPU,Memory, Persistent Disk|
