@@ -15,3 +15,6 @@
 * Copy/move `gsutil cp/mv gs://SOURCE gs://DES`
 * Đổi class type `gsutil rewrite STORAGE_CLASS gs://BUCKET_NAME`
 * Tạo signurl `gsutil signurl -d 10 minute YOUR_KEY gs://bucket/object`
+
+### Đồng bộ dữ data giữa 2 bucket
+* `gsutil rsync [OPTION]... src_url dst_url`
