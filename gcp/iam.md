@@ -1,10 +1,12 @@
+### Role
 * Role là tập hợp các permission, không liên quan đến member
 * Dùng policy để assign role cho member
 * Role có 3 loại:
   * Primitive: Owner/Editor/Viewer
   * Predefined: Những role gắn liền với các resource mà Google định nghĩa sẵn
   * Custom: Role do chúng ta tự định nghĩa
-* Role được assign cho member thông qua policy document, được biểu diễn bằng các policcy object
+* Có 4 launch stages khi tạo 1 role: alpha, beta, general availability, disabled
+* Role được assign cho member thông qua policy document, được biểu diễn bằng các policy object
   * Policy object là list các bindings
   * Mỗi binding là bind 1 role cho list members
   * Member có thể là user, service account, group, domain
@@ -27,6 +29,8 @@
     ]
   }
   ```
+* Có thể copy role từ 1 role có sẵn ở bất cứ source nào:
+  `gcloud iam roles copy [--dest-organization=DEST_ORGANIZATION] [--dest-project=DEST_PROJECT] [--destination=DESTINATION] [--source=SOURCE] [--source-organization=SOURCE_ORGANIZATION] [--source-project=SOURCE_PROJECT] [GCLOUD_WIDE_FLAG …]`
 
 ### CLI
 * Show list binding: `gcloud projects get-iam-policy <PROJECT_ID>`

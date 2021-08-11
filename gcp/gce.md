@@ -17,6 +17,8 @@
   Ví dụ: `e2-standard-2` là Machine dòng E2 dùng cho mục đích standard và có 2 CPU.
 
   Các thông số về RAM, disk, network cũng sẽ tăng theo cấp số của CPU.
+* Trong instance type, RAM sẽ gấp đôi theo số CPU, nhưng số lượng ít nhiều sẽ theo thứ tự highcpu < standard < highmem
+* Maximum vCPU của 1 custom VM là 96, max RAM là 624GB
 
 ### VM IP Address
 * Mỗi VM có ít nhất 1 internal IP, external IP là optional
@@ -52,3 +54,13 @@
 * Instance Template khai báo các thuộc tính của instance và lưu lại như 1 Template
 * Có thể run instance từ template
 * Instance Group có tác dụng trong auto scale, có thể tự quản lý bằng cách add các instance vào group. Nhưng tốt nhất là nên để Google quản lý bằng instance template
+
+### Startup
+* Sau khi request tạo 1 instance mới (Service account phải được tạo trước khi attach vào instance), instance sẽ được bắt đầu ở trạng thái Provisioning. Sau khi space được tìm thấy và gán vào host machine, instance sẽ được chuyển sang trạng thái Starting, trong khi host machine chuẩn bị run instance và sắp xếp lại một số thứ như network adapter, ... Ngay khi VM được khoier động lên và hệ điều hành chạy các start up scripts, instance sẽ chuyển sang trạng thái Running
+
+### Sole tenancy
+* Sole tenancy đảm bảo răng chỉ những VMs trong cùng project sẽ run trên 1 máy chủ vật lý
+
+### Login to server
+* RDP (Remote Desktop Protocol) được sử dụng để loggin vào 1 Windows server
+* SSH được sử dụng để loggin vào Linux server

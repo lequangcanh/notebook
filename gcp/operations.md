@@ -16,6 +16,7 @@
 * Có 2 loại Log bucket:
   * `_required`: Chứa Admin activity, system event và Access transparency logs. Được lưu trong 400 ngày, không trả phí, không thể xóa và cũng không thể thay đổi được con số 400
   * `_default`: Những logs khác, default lưu trong 30 ngày, phải trả phí, không thể xóa nhưng có thể disable, có thể config retain day trong range 1 ngày -> 10 năm
+* OpenCensus là 1 tool để phát triển các custom metrics có thể được sử dụng với Stackdriver Logging
 
 ### Cloud Trace
 * 1 service tốn bao nhiêu lâu để xử lý request

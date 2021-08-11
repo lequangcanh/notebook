@@ -4,6 +4,7 @@
 * Mỗi cluster sẽ được tạo với ít nhất 1 node pool. Node pool là template của group các nodes được tạo trong cluster
 * Resize cluster `gcloud container clusters resize <NAME> --node-pool ... --num-nodes=3`
 * Autoscaling `gcloud container clusters update <NAME> --enable-autoscaling --min-nodes=1 --max-nodes=10`
+* Một file được sử dụng để config và giao tiếp với cluster thì gọi là `kubeconfig`. Đây là 1 định nghĩa cho các file config chứ không phải tên file
 
 ### Thao tác với deployment
 * Tạo deployment `kubectl create deployment <NAME> --image=...`
@@ -31,6 +32,7 @@
 * Mỗi pod có thể chứa 1 hoặc nhiều container (mà thông thường là 1)
 * Mỗi pod được assign 1 IP Address động
 * Tất cả container trong pod sẽ dùng chung: Network, Storage, IP Address, Ports, Volumns
+* StatefulSet đại diện cho tập hợp của các Pod, nó như là 1 Pod template, nó sử dụng một thứ tự index được order để triển khai các pod. Pod đầu tiên dc tạo sẽ đánh dấu là name-0 (mặc định sẽ là master), các pod tiếp theo sẽ theo thứ tự name-1, name-2, ... Khi tắt thì tắt theo thứ tự ngược lại
 
 ### Service
 * Nhiệm vụ expose các pods ra bên ngoài
