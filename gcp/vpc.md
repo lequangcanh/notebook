@@ -9,6 +9,7 @@
   * Ingress: Target đi từ bên ngoài vào GCP target
   * Egress: Traffic đến destination từ GCP target
   * Trong đó: Target là tất cả instance hoặc được mark bởi tag, service account. Source có thể được mark bằng CIDR, tag, service account
+  * Firewall rule gồm các component: Direction of traffic, action on match, protocol
 
 ### Shared VPC
 * Được tạo trong 1 organization hoặc shared folder

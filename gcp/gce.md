@@ -31,7 +31,8 @@
 * Có các option
   * Sử dụng discount
   * Committed: Commit con số sử dụng trong 1 khoảng thời gian nào đó
-  * Preemptive: Dùng tạm thời, có thể bị GCP thu hồi bất cứ lúc nào mà không cần báo trước
+  * Preemptible: Dùng tạm thời, có thể bị GCP thu hồi bất cứ lúc nào mà không cần báo trước. Tối đa 24h
+* Có thể sử dụng Preemptible instance để thực thi các batch processing. Nếu jobs đang thực thi mà instance bị stop, có thể làm chậm việc thực thi job chứ không hoàn toàn stop hẳn. Preemptible instance sẽ hoàn thành những jobs đang chạy mà không đòi hỏi thêm bất kỳ chi phí nào
 
 ### Một số config quan trọng
 * **Live migration**:

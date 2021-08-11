@@ -17,3 +17,6 @@
   * Khi cả 3 option trên đều được setting thì sẽ ưu tiên theo thứ tự từ command dưới lên
 * Filter bằng cách thêm option `--filter="key:(value1 value 2)"`
 * Sort bằng option `--sort-by (NAME/~NAME)`
+
+* Tạo các config khác nhau: `gcloud config configurations create <NAME>`
+* Active 1 config để thao tác với các service: `gcloud configurations active <NAME>`
