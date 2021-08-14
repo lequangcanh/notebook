@@ -14,8 +14,8 @@
 * Log từ 1 resource nào đó sẽ đi vào Log route
 * Log Route check config để quyết định cái nào lưu vào, cái nào từ chối, và lưu vào đâu
 * Có 2 loại Log bucket:
-  * `_required`: Chứa Admin activity, system event và Access transparency logs. Được lưu trong 400 ngày, không trả phí, không thể xóa và cũng không thể thay đổi được con số 400
-  * `_default`: Những logs khác, default lưu trong 30 ngày, phải trả phí, không thể xóa nhưng có thể disable, có thể config retain day trong range 1 ngày -> 10 năm
+  * `_Required`: Chứa Admin activity, system event và Access transparency logs. Được lưu trong 400 ngày, không trả phí, không thể xóa và cũng không thể thay đổi được con số 400
+  * `_Default`: Những logs khác, default lưu trong 30 ngày, phải trả phí, không thể xóa nhưng có thể disable, có thể config retain day trong range 1 ngày -> 10 năm
 * OpenCensus là 1 tool để phát triển các custom metrics có thể được sử dụng với Stackdriver Logging
 
 ### Cloud Trace

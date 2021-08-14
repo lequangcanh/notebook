@@ -64,3 +64,9 @@
 ### Login to server
 * RDP (Remote Desktop Protocol) được sử dụng để loggin vào 1 Windows server
 * SSH được sử dụng để loggin vào Linux server
+
+### Scopes
+* Scope là những quyền được cấp cho VM instances
+* Scope được định nghĩa bằng các API service bắt đầu bằng `https://www.googleapis.com/auth/`, ví dụ: `https://www.googleapis.com/auth/compute`, `https://www.googleapis.com/auth/logging.write`
+* Mặc định sẽ được đọc vào Storage và Service Management, write vào Stackdriver Logging and Monitoring, read/write access vào Service Control
+* Scopes có thể được set khi sử dụng service account mặc định
