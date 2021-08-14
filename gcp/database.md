@@ -26,8 +26,18 @@
   * Application cho phép users phân tích petabytes data
   * Lưu data theo column
   * GCP Service: Big Query
-* NoSQL: Cloud Firestore (recommend cho ít TB), Cloud BigTable (recommend > 10TB)
-* Memory Store: Redis, Memcached
+
+### NoSQL 
+* Cloud Firestore (recommend cho ít TB), Cloud BigTable (recommend > 10TB)
+* Datastore là 1 highly scalable NoSQL database cho webapp và mobile app.
+* Firestore là thế hệ tiếp theo của Datastore
+* Có 3 options cho hệ thống lưu trữ dữ liệu của Cloud Firestore:
+  * Datastore (cũ)
+  * Firestore in Datastore (sử dụng Firestore tương thích ngược với Datastore)
+  * Firestore Native mode (recommened)
+
+### Memory Store: 
+* Redis, Memcached
 
 ### Usecase
 * Cloud SQL: Support MySQL, PostgreSQL, SQL Server
@@ -35,7 +45,5 @@
   * Cần lưu trữ nhiều hơn
   * Global DB
   * Higher Availability
-* Datastore: Lưu trữ NoSQL
-* Firestore: Dùng cho Native mode
 * Big Query/Data Warsehourse: Truy vấn trên dataset rất lớn, vì vậy nó rất đắt cần estimate trước khi chạy. Trả tiền theo data đã scan chứ không phải theo result
 * Data Flow: Tạo các job để backup data. Rất quan trọng với Big Table vì dữ liệu rất lớn
