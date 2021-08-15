@@ -2,7 +2,9 @@
 * Theo dõi các cơ sở hạ tầng
 * Metrics
 * Graph and Dashboard
-* Alert
+* Alert:
+  * Khi tạo 1 alert policy có thể định nghĩa: conditions, notifications, documentation
+  * 1 alert có thể thông báo đến nhiều channels như: Slack, SMS, email, ...
 * Có thể monitor 1 hoặc nhiều GCP project và 1 hoặc nhiều AWS account
 
 ### Cloud Logging

@@ -45,7 +45,9 @@
   * On host maintenance: Điều gì xảy ra khi có update kiến trúc
     * Migrate: Migrate instance trên 1 hardware khác
     * Terminate: Tắt luôn VM instance
-  * Automatic restart: Restart VM nếu nó bị tắt bởi 1 lý do nào đó không phải của user init, ví dụ như lỗi phần cứng, ...
+  * Automatic restart (On - recommended/Off): Restart VM nếu nó bị tắt bởi 1 lý do nào đó không phải của user init, ví dụ như lỗi phần cứng, ...
+  * Preemptibility (On/Off - recommended): Sử dụng Preemptibility instance
+
 * Có thể chọn Custom Machine Type khi những option được định nghĩa trước không phù hợp. **Chỉ áp dụng cho General Family**
 * GPU chỉ support một số machine type
 * Có thể change machine type khi VM instance đã được stop
@@ -70,3 +72,6 @@
 * Scope được định nghĩa bằng các API service bắt đầu bằng `https://www.googleapis.com/auth/`, ví dụ: `https://www.googleapis.com/auth/compute`, `https://www.googleapis.com/auth/logging.write`
 * Mặc định sẽ được đọc vào Storage và Service Management, write vào Stackdriver Logging and Monitoring, read/write access vào Service Control
 * Scopes có thể được set khi sử dụng service account mặc định
+
+### Snapshots
+* Để làm việc với snapshot thì phải có quyền Compute Storage Admin role
