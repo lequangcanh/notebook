@@ -1,4 +1,6 @@
 * Organization > Folder > Project > Resource
+* Chỉ có thể tạo 1 organization, có thể extend thêm bằng cách liên lạc với Google
+* Mặc định tất cả users trong 1 organization có thể tạo được project
 * Billing account nằm dưới organization
 * Mỗi billing account có thể thanh toán cho nhiều project
 * Cloud Marketplace: Install những package có sẵn
