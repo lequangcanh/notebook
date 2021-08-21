@@ -31,6 +31,7 @@
 * Cloud Firestore (recommend cho ít TB), Cloud BigTable (recommend > 10TB)
 * Datastore là 1 highly scalable NoSQL database cho webapp và mobile app.
 * Firestore là thế hệ tiếp theo của Datastore
+* Firestore được xây dựng trên NFS (Network Filesystem)
 * Có 3 options cho hệ thống lưu trữ dữ liệu của Cloud Firestore:
   * Datastore (cũ)
   * Firestore in Datastore (sử dụng Firestore tương thích ngược với Datastore)

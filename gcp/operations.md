@@ -31,3 +31,6 @@
 * Trực tiếp trên GCP
 * Snapshot của các biến
 * Không cần add log, không cần deploy lại
+
+### Error Reporting
+* Lưu lại các thông tin về crash server

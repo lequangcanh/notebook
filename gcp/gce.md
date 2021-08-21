@@ -73,5 +73,6 @@
 * Mặc định sẽ được đọc vào Storage và Service Management, write vào Stackdriver Logging and Monitoring, read/write access vào Service Control
 * Scopes có thể được set khi sử dụng service account mặc định
 
-### Snapshots
+### Boot disk và Snapshots
 * Để làm việc với snapshot thì phải có quyền Compute Storage Admin role
+* Khi tạo 1 VM, ở book disk configuration chỉ có thể đính kèm 1 disk đã tồn tại hoặc tạo mới 1 disk
