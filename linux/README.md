@@ -19,3 +19,11 @@
 ### File /etc/resolv.conf
 * symlink tới `../run/resolvconf/resolv.conf`?
 * Trong `../run/resolvconf/resolv.conf` thì giá trị lại thay đổi mỗi khi đổi mạng?
+
+### Cài song song windows và ubuntu
+* Sai timezone trên win: `sudo timedatectl set-local-rtc 1`
+* Mở ổ đĩa windows trên ubuntu: 
+
+  `sudo fdisk -l`
+
+  `sudo ntfsfix /dev/sda1`
