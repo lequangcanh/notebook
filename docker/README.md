@@ -20,3 +20,6 @@
                 config:
                     - subnet: 172.21.0.0/24
     ```
+
+### Container
+* Cho phép 1 container luôn bật khi khởi động máy `docker update --restart unless-stopped <CONTAINER_ID>`
