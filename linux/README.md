@@ -27,3 +27,6 @@
   `sudo fdisk -l`
 
   `sudo ntfsfix /dev/sda1`
+
+### Cài zsh default trên ubuntu
+`getent passwd | grep 'le.quang.canh' | sed -e 's/bash/zsh/g' | sudo tee -a /etc/passwd`
